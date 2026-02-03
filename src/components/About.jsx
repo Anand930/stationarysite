@@ -1,5 +1,5 @@
 import React from 'react'
-import belowAbout from '../assets/belowabout.png'
+import belowAbout from '../assets/BelowAbout.png'
 import stationary1 from '../assets/stationary1.jpg'
 
 const About = () => {

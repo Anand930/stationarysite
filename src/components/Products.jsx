@@ -1,5 +1,5 @@
 import React from 'react'
-import belowAbout from '../assets/belowabout.png'
+import belowAbout from '../assets/BelowAbout.png'
 import Card from './Card'
 
 const Products = () => {
