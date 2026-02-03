@@ -1,5 +1,5 @@
 import React from 'react'
-import belowAbout from '../assets/BelowAbout.PNG'
+import belowAbout from '../assets/belowabout.png'
 import Card from './Card'
 
 const Products = () => {
@@ -11,7 +11,7 @@ const Products = () => {
                     <img src={belowAbout} alt="belowAbout" srcset="" />
                 </div>
                 <div>
-<Card/>
+                    <Card />
                 </div>
             </div>
         </div>
