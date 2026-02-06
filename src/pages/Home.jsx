@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Products from '../components/Products'
+import Contactus from '../components/Contactus'
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             </div>
             <About />
             <Products/>
+            <Contactus/>
         </div>
 
     )

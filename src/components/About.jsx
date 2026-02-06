@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className='flex items-center justify-center pb-20'>
 
-          <button className='p-2 bg-[#da5637] text-xl text-white px-4 hover:border-2 border-white rounded-xl'>See More...</button>
+          <button className='p-2 bg-[#da5637] text-xl text-white px-4 border-2 border-transparent hover:border-2 hover:border-white rounded-xl shadow-2xl'>See More...</button>
         </div>
       </div>
     </div>
