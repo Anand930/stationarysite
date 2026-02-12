@@ -5,6 +5,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { RiTwitterXLine } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [menuClicked, setMenuClicked] = useState(false)
@@ -24,14 +25,14 @@ const Navbar = () => {
         <div className={`py-4 ${scrollY>=5?"fixed bg-linear-to-r from-blue-900 to-blue-800 shadow-2xl w-full z-50 opacity-90":""}`}>
             <div className='flex items-center justify-between max-w-7xl mx-auto px-2 xl:px-0'>
                 <div className="logo w-16 sm:w-auto" >
-                    <img src={logo} alt="Logo" width={150} />
+                    <img src={logo} alt="Logo" width={120} />
                 </div>
                 <div className="links hidden sm:block">
                     <ul className='flex md:gap-5 gap-2 items-center justify-center'>
-                        <li className='md:p-0 hover:text-black text-white text-xs md:text-lg hover:cursor-pointer '>Home</li>
-                        <li className='md:p-0 hover:text-black text-white text-xs md:text-lg hover:cursor-pointer '>About</li>
-                        <li className='md:p-0 hover:text-black text-white text-xs md:text-lg hover:cursor-pointer '>Products</li>
-                        <li className='md:p-0 hover:text-black text-white text-xs md:text-lg hover:cursor-pointer '>Contacts</li>
+                        <li className='md:p-0 hover:text-[#da5637] text-white text-xs md:text-md hover:cursor-pointer'><a href="#Home">Home</a></li>
+                        <li className='md:p-0 hover:text-[#da5637] text-white text-xs md:text-md hover:cursor-pointer'><a href="#About">About</a></li>
+                        <li className='md:p-0 hover:text-[#da5637] text-white text-xs md:text-md hover:cursor-pointer'><a href="#Product">Products</a></li>
+                        <li className='md:p-0 hover:text-[#da5637] text-white text-xs md:text-md hover:cursor-pointer'><a href="#Contact">Contacts</a></li>
                     </ul>
                 </div>
                 <div className="social-links hidden sm:flex gap-2">
@@ -46,10 +47,10 @@ const Navbar = () => {
                 </div>
                 <div className={`sm:hidden absolute top-12 right-2 bg-white text-black p-2 opacity-50 hover:bg-[#ed572d] ${!menuClicked?"hidden":""}`}>
                     <ul className='flex flex-col gap-1 items-center justify-center '>
-                        <li className='md:p-2 hover:text-white text-xs md:text-sm w-full text-center'>Home</li>
-                        <li className='md:p-2 hover:text-white text-xs md:text-sm w-full text-center'>About</li>
-                        <li className='md:p-2 hover:text-white text-xs md:text-sm w-full text-center'>Products</li>
-                        <li className='md:p-2 hover:text-white text-xs md:text-sm w-full text-center'>Contacts</li>
+                        <li className='md:p-2 hover:text-white text-xs md:text-sm w-full text-center'><a href="#Home">Home</a></li>
+                        <li className='md:p-2 hover:text-white text-xs md:text-sm w-full text-center'><a href="#About">About</a></li>
+                        <li className='md:p-2 hover:text-white text-xs md:text-sm w-full text-center'><a href="#Product">Products</a></li>
+                        <li className='md:p-2 hover:text-white text-xs md:text-sm w-full text-center'><a href="#Contact">Contacts</a></li>
                     </ul>
                 </div>
             </div>

@@ -31,8 +31,8 @@ const Products = () => {
         },
     ];
     return (
-        <div className='max-w-7xl mx-auto'>
-            <div className='w-full text-center py-20 '>
+        <div className='max-w-7xl mx-auto' id='Product'> 
+            <div className='w-full text-center py-20 px-10 '>
                 <p className='text-3xl font-bold text-[#1a3cab]  underline-offset-4'><span className='text-[#da5637]'>Products</span></p>
                 <div className='flex items-center justify-center mb-10'>
                     <img src={belowAbout} alt="belowAbout" srcset="" />
@@ -43,6 +43,17 @@ const Products = () => {
 
                     spaceBetween={50}
                     slidesPerView={3}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    }}
                     navigation={{
                         nextEl: ".next-btn",
                         prevEl: ".prev-btn",

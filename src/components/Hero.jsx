@@ -4,7 +4,7 @@ import HeroImage from '../assets/heroImage.png'
 const Hero = () => {
     return (
         <section className="">
-            <div className="xl:max-w-7xl w-full mx-auto xl:px-6 py-5 md:py-20 sm:flex sm:flex-row items-center sm:gap-6 justify-between  flex-col-reverse">
+            <div className="xl:max-w-7xl w-full flex mx-auto xl:px-6 py-5 md:py-20 sm:flex sm:flex-row items-center sm:gap-6 justify-between flex-col-reverse gap-10">
 
                 {/* Left Content */}
                 <div className="sm:w-1/2 w-full mx-auto ">
@@ -48,11 +48,11 @@ const Hero = () => {
                 </div>
 
                 {/* Right Image */}
-                <div className="relative w-1/2 hidden sm:block">
+                <div className="relative sm:w-1/2  flex w-full sm:py-auto ">
                     <img
                         src={HeroImage}
                         alt="Trading Supplies"
-                        className="rounded-xl shadow-2xl"
+                        className="rounded-xl shadow-2xl "
                     />
                 </div>
 
